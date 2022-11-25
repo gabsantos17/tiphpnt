@@ -16,8 +16,9 @@
     <h3 class="text-danger bg-info">Index</h3>
     <h3 class="text-danger bg-success">Index</h3>
     <style>
-        .h3{
+        .text-danger {
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
         }
     </style>
 </body>
