@@ -49,12 +49,33 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <?php foreach($rows_tipos as $rows){?>
-                                        <li><a href=""></a></li>
+                                        <li><a href="produtos_por_tipo.php?id_tipo=<?php echo $row[0] ?>"><?php echo $row[2] ?></a></li>
                                     <?php }?>
                             </ul>
                         </li>
-                        <li></li>
-                        <li></li>
+                        <!-- fim dropdown -->
+
+                        <li><a href="index.php#contato">Contato</a></li>
+                        <!-- inicio formulário de busca -->
+                        <form action="produtos_busca.php" method="get" name="form-busca" 
+                        id="form-busca" class="navbar-form navbar-left" role="search">
+                                <div class="input-group">
+                                    <input type="search" name="buscar" id="buscar" size="10" class="form-control"
+                                    aria-label="search" placeholder="Buscar produto" required>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                        </form>
+                        <!-- fim do formulário de busca -->
+                        <li class="active">
+                            <a href="admin/index.php">
+                                <span class="glyphicon glyphicon-user">&nbsp;Admin/Cliente</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
         </div>
