@@ -1,0 +1,8 @@
+/* definindo nosso estilo... */ 
+@charset "utf-8";
+
+.fundofixo{
+    background: url('../images/churrascaria1.jpg') no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
