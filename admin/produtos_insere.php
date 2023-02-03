@@ -148,8 +148,21 @@ if($_POST){
                 $("#imagem").attr("src", "blank");
                 $("#imagem").hide();
                 $("#imagem_produto").wrap('<form>').closet('form').get(0).reset();
+                $("#imagem_produto").unwrap();
+                return false
             }
         }
+        if(this.files[0].type.indexOf("image")==-1){
+                alert("Formato inválido, escolha uma imagem!");
+                $("#imagem").attr("src", "blank");
+                $("#imagem").hide();
+                $("#imagem_produto").wrap('<form>').closet('form').get(0).reset();
+                $("#imagem_produto").unwrap();
+                return false
+            }
+            raeder.onload = function(e){
+
+            }
     </script>
 
 
