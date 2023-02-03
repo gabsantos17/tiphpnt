@@ -161,8 +161,11 @@ if($_POST){
                 return false
             }
             raeder.onload = function(e){
-
+                document.getElementById("imagem").src = e.target.result
+                $("#imagem").show();
             }
+            reader.readAsDataURL(this.files[0]);
+        
     </script>
 
 
